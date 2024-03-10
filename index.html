@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Technical Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>
+                <h1 class="js_docs">Javascript Docs</h1>
+            </header>
+            <ul>
+                <li><a href="#storing" class="nav-link">Storing</a></li>
+                <li><a href="#decisions" class="nav-link">Decisions</a></li>
+                <li><a href="#twisting" class="nav-link">Twisting</a></li>
+                <li><a href="#functions" class="nav-link">Functions</a></li>
+                <li><a href="#console" class="nav-link">Console</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="storing">
+                <header class="nav-head">Storing</header>
+                <p>In programming lanaguges we need to store data in memory. For this purpose we use variables.
+                    Variables are like containers for the data.</p>
+                <p>We use keywords like var, let and const before selecting name for variable.</p>
+                <code>var a = "a";</code>
+                <p>Allowed names for javascript variables are:</p>
+                <li class="li">Alphabets</li>
+                <li class="li">Digits (not at the start)</li>
+                <li class="li">Underscore</li>
+                <li class="li">Dollar sign</li>
+                <li class="li">no spaces, no reserved keywords</li>
+                <p>The data we store into variables has two types the primitives(non-modifiable) and the
+                    non-primitives(modifiable). Primitive data types are strings, numbers, undefined, null and booleans.
+                    Non-pimitives are funtions, objects and arrays etc. </p>
+                <code>var string = "string";</code>
+                <code>let number = 20;</code>
+                <code>var xyz;</code>
+                <code>let bool = true;</code>
+                <code>const abc = null;</code>
+            </section>
+            <section class="main-section" id="decisions">
+                <header class="nav-head">Decisions</header>
+                <p>For making certain type of decisions for logic. We can use conditionals. Conditionals are comprises
+                    of if, if-else, if-else-if, switch case statement and ternary operator.</p>
+                <p>If portion always has a condition. Else is executed only when the if condition becomes false.</p>
+                <code>if(condition){ }</code>
+                <code>if(condition){ }else{ }</code>
+                <code>if(condition){ }else { }if(condition){ }else { }</code>
+                <code>switch(expression){
+                    case1: 
+                    break;
+                    case2:
+                    break;
+                    default:
+                }
+                </code>
+                <code>condition ? exprIfTrue : exprIfFalse</code>
+            </section>
+            <section class="main-section" id="twisting">
+                <header class="nav-head">Twisting</header>
+                <p>To create a repetitive pattern. We can use three types of loops that are called for loop, while loop
+                    and do-while loop.</p>
+                <p>For loop helps to create repetition for specific number of times. It is most common loop from other
+                    two types.</p>
+                <code>for(let i = 0; i < 10; i++){ }</code>
+                <p>This loop will end when 10 twists of certain code will be complited.</p>
+                <p>On the other hand, while loop continues its loop as long as the code passes the condition of while
+                    loop. It never stops. So never use it for your code projects.</p>
+                <code>while(condition){ }</code>
+                <p>And lastly the do-while always run one time before checking the condition stated inside while
+                    portion.</p>
+                <code>do{ }while(condition){ }</code>
+            </section>
+            <section class="main-section" id="functions">
+                <header class="nav-head">Functions</header>
+                <p>If we want to separate a certain block of code to perform it again and again at different points.
+                    Then functions are best for this kind of role. Functions reduces the lines of code, redundancy. We
+                    can call a function anywhere in the code when we need it. It has up to 6 types. Declaration type,
+                    anonyms type, expression type, self-invoking type and arrow functions.</p>
+                <p>To get the result from a function you must call a function after declaring it.</p>
+                <code>function functionName(){ }</code>
+                <p>function calling:</p>
+                <code>functionName();</code>
+                <p>Every type of funtions has new method to call it. But some functions don't need to be called.</p>
+            </section>
+            <section class="main-section" id="console">
+                <header class="nav-head">Console</header>
+                <p>Console is a object method in javascript. Console is not a kind of javascript code lines that are
+                    helpful for end users of the websote. It is not related to users but it concides with the technical
+                    programmers. It is used by the programmers and it helps them to get
+                    output and debug th code more efficiently. It has many variations and method:</p>
+                <code>console.log()</code>
+                <code>console.warn()</code>
+                <code>console.error()</code>
+                <code>console.assert()</code>
+                <code>console.table()</code>
+                <code>console.info()</code>
+                <code>console.time()</code>
+                <code>console.count()</code>
+                <code>console.clear()</code>
+                <p>Although it is not very necessary but for fun we can easily design the console output like this:</p>
+                <code>console.log("%cWelcome to Javascript Docs", "color:green;")</code>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
